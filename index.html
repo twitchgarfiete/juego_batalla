@@ -77,6 +77,57 @@
 			"las_garficartas": { atk: 73, def: 61, pes: 56, hp: 68 },
 			"garfiete": { atk: 93, def: 94, pes: 99, hp: 97 },
 			"el_hormiguero": { atk: 73, def: 69, pes: 70, hp: 68 },
+			"los_suscriptores": { atk: 83, def: 80, pes: 69, hp: 76 },
+			"adri_espadachin": { atk: 49, def: 37, pes: 33, hp: 43 },
+			"adri_millonario": { atk: 68, def: 63, pes: 57, hp: 70 },
+			"aitor_mallorquin": { atk: 49, def: 56, pes: 47, hp: 52 },
+			"amara": { atk: 85, def: 94, pes: 81, hp: 93 },
+			"ana_racista": { atk: 49, def: 52, pes: 43, hp: 53 },
+			"anto_futbolista": { atk: 57, def: 49, pes: 42, hp: 53 },
+			"arnau_encapuchado": { atk: 38, def: 47, pes: 41, hp: 42 },
+			"coma_etilico": { atk: 73, def: 62, pes: 65, hp: 56 },
+			"filetina": { atk: 74, def: 77, pes: 68, hp: 83 },
+			"gabi_pulpeiro": { atk: 38, def: 41, pes: 31, hp: 45 },
+			"garfiete_espannol": { atk: 47, def: 50, pes: 48, hp: 53 },
+			"garfiete_navidenno": { atk: 83, def: 86, pes: 94, hp: 87 },
+			"garfito_butanero": { atk: 76, def: 69, pes: 68, hp: 72 },
+			"heleno": { atk: 65, def: 62, pes: 71, hp: 57 },
+			"inkultos": { atk: 46, def: 39, pes: 42, hp: 40 },
+			"ivan_enamorador": { atk: 83, def: 80, pes: 65, hp: 78 },
+			"janeth_graduada": { atk: 46, def: 43, pes: 38, hp: 51 },
+			"la_secta_del_ojo": { atk: 48, def: 32, pes: 39, hp: 43 },
+			"lapa_ciega": { atk: 38, def: 49, pes: 36, hp: 42 },
+			"limozzzio": { atk: 40, def: 32, pes: 43, hp: 35 },
+			"los_buceadores": { atk: 73, def: 69, pes: 66, hp: 64 },
+			"los_saitzoncillos": { atk: 76, def: 75, pes: 78, hp: 84 },
+			"manu": { atk: 96, def: 91, pes: 83, hp: 87 },
+			"manu_borracho": { atk: 59, def: 56, pes: 48, hp: 46 },
+			"markibingo_2": { atk: 49, def: 51, pes: 53, hp: 56 },
+			"markitos_coyote": { atk: 88, def: 76, pes: 91, hp: 87 },
+			"markitos_espia": { atk: 42, def: 45, pes: 38, hp: 49 },
+			"markitos_fumon_2": { atk: 63, def: 67, pes: 64, hp: 51 },
+			"markitos_pensativo": { atk: 67, def: 69, pes: 61, hp: 65 },
+			"mireya_delfina": { atk: 73, def: 75, pes: 68, hp: 81 },
+			"miriam_comunista": { atk: 49, def: 40, pes: 38, hp: 42 },
+			"miriam_sevillana": { atk: 74, def: 79, pes: 80, hp: 83 },
+			"natcos_chen": { atk: 40, def: 43, pes: 32, hp: 38 },
+			"padrino_magico": { atk: 41, def: 40, pes: 32, hp: 37 },
+			"perreo_supremo": { atk: 72, def: 67, pes: 60, hp: 64 },
+			"phoenix_macarra": { atk: 73, def: 58, pes: 62, hp: 68 },
+			"pilar": { atk: 69, def: 70, pes: 64, hp: 63 },
+			"planeta_peseta": { atk: 42, def: 37, pes: 46, hp: 49 },
+			"primer_aniversario": { atk: 86, def: 77, pes: 72, hp: 83 },
+			"rocio": { atk: 81, def: 89, pes: 77, hp: 86 },
+			"s_a_n": { atk: 81, def: 78, pes: 83, hp: 75 },
+			"sam_megamamada": { atk: 74, def: 70, pes: 62, hp: 69 },
+			"santi_gordito": { atk: 56, def: 46, pes: 58, hp: 53 },
+			"segarro_amego": { atk: 80, def: 76, pes: 67, hp: 75 },
+			"shwola": { atk: 37, def: 32, pes: 46, hp: 41 },
+			"tartazo": { atk: 87, def: 84, pes: 72, hp: 90 },
+			"viajes_canica": { atk: 36, def: 40, pes: 31, hp: 37 },
+			"viajes_triunfador": { atk: 52, def: 46, pes: 37, hp: 41 },
+			"wep": { atk: 54, def: 60, pes: 55, hp: 63 },
+			"xavitos": { atk: 46, def: 47, pes: 44, hp: 50 },
             "default": { atk: 0, def: 0, pes: 0, hp: 0 }
         };
 
@@ -111,8 +162,8 @@
             if (!u1 || !u2 || u1 === u2) return alert("Selecciona dos jugadores distintos");
             window.state.p1.name = u1;
             window.state.p2.name = u2;
-            window.state.p1.deck = obtenerCartasAleatorias(u1, 5);
-            window.state.p2.deck = obtenerCartasAleatorias(u2, 5);
+            window.state.p1.deck = obtenerCartasAleatorias(u1, 8);
+            window.state.p2.deck = obtenerCartasAleatorias(u2, 8);
             window.state.fase = "seleccion";
             render();
         };
